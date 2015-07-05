@@ -2,6 +2,10 @@
 
 (echo -n "C\t"; time ./ccfact 200000 > c.out) 2>&1 | tee bench.txt
 (echo -n "Chicken\t"; time ./cfact 200000 > chicken.out) 2>&1 | tee -a bench.txt
+(echo -n "Erlang\t"; 
+    time erl -noinput -s fact main -s init stop > erlang.out
+) 2>&1 | tee -a bench.txt
+
 (echo -n "Go\t"; time ./gfact -n=200000 > go.out ) 2>&1 | tee -a bench.txt
 (echo -n "Guile\t"; 
     guile sfact.scm 1 > /dev/null 2>&1;
@@ -13,5 +17,5 @@
 (echo -n "Ocaml\t"; time ./ofact 200000 > ocaml.out) 2>&1 | tee -a bench.txt
 (echo -n "Python\t"; time python pfact.py 200000 > python.out) 2>&1 | tee -a bench.txt
 (echo -n "Pyrex\t"; time python px.py 200000 > cpython.out) 2>&1 | tee -a bench.txt
-(echo -n "Scala\t"; time scala scfact 200000 > scala.out) 2>&1 | tee -a bench.txt
+(echo -n "Scala\t"; time scala Fact 200000 > scala.out) 2>&1 | tee -a bench.txt
 (echo -n "SML/NJ\t"; time < /dev/null sml mfact.sml > smlnj.out) 2>&1 | tee -a bench.txt

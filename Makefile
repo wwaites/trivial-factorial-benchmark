@@ -1,4 +1,4 @@
-TARGETS=cfact gfact hfact ccfact pxfact.so ofact mfact scfact.class
+TARGETS=cfact gfact hfact ccfact pxfact.so ofact mfact scfact.class fact.beam
 all: ${TARGETS}
 
 bench: all
@@ -25,6 +25,8 @@ mfact: mfact.sml
 	mlton mfact.sml
 scfact.class: scfact.scala
 	scalac -optimise scfact.scala
+fact.beam: fact.erl
+	erlc fact.erl
 
 clean:
 	rm -f *~
