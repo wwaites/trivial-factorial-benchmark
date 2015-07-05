@@ -24,7 +24,7 @@ ofact: ofact.ml
 mfact: mfact.sml
 	mlton mfact.sml
 scfact.class: scfact.scala
-	scalac scfact.scala
+	scalac -optimise scfact.scala
 
 clean:
 	rm -f *~
