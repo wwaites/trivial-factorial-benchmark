@@ -1,0 +1,18 @@
+C	3.78user 0.00system 0:03.79elapsed 99%CPU (0avgtext+0avgdata 3832maxresident)k
+0inputs+1904outputs (0major+1696minor)pagefaults 0swaps
+Chicken	23.24user 0.30system 0:23.57elapsed 99%CPU (0avgtext+0avgdata 14940maxresident)k
+0inputs+1904outputs (0major+256090minor)pagefaults 0swaps
+Go	7.00user 0.00system 0:07.00elapsed 100%CPU (0avgtext+0avgdata 13160maxresident)k
+0inputs+1904outputs (0major+3520minor)pagefaults 0swaps
+Guile	23.57user 1.56system 0:25.22elapsed 99%CPU (0avgtext+0avgdata 13456maxresident)k
+0inputs+1904outputs (0major+1297511minor)pagefaults 0swaps
+Haskell	5.14user 0.04system 0:05.19elapsed 99%CPU (0avgtext+0avgdata 16512maxresident)k
+0inputs+1904outputs (0major+4260minor)pagefaults 0swaps
+ML	6.14user 0.01system 0:06.19elapsed 99%CPU (0avgtext+0avgdata 15276maxresident)k
+0inputs+1904outputs (0major+10963minor)pagefaults 0swaps
+Ocaml	42.72user 4.84system 0:47.64elapsed 99%CPU (0avgtext+0avgdata 10132maxresident)k
+0inputs+1904outputs (0major+5645429minor)pagefaults 0swaps
+Python	22.23user 1.66system 0:23.91elapsed 99%CPU (0avgtext+0avgdata 12484maxresident)k
+0inputs+1904outputs (0major+2049027minor)pagefaults 0swaps
+Pyrex	22.22user 1.63system 0:23.86elapsed 99%CPU (0avgtext+0avgdata 7112maxresident)k
+0inputs+1904outputs (0major+2047404minor)pagefaults 0swaps
