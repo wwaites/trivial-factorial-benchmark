@@ -18,3 +18,4 @@ Python	22.15user 1.69system 0:23.87elapsed 99%CPU (0avgtext+0avgdata 12480maxres
 0inputs+1904outputs (0major+2049026minor)pagefaults 0swaps
 Pyrex	22.28user 1.55system 0:23.85elapsed 99%CPU (0avgtext+0avgdata 7108maxresident)k
 0inputs+1904outputs (0major+2047404minor)pagefaults 0swaps
+SML/NJ	
