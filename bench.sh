@@ -13,4 +13,5 @@
 (echo -n "Ocaml\t"; time ./ofact 200000 > ocaml.out) 2>&1 | tee -a bench.txt
 (echo -n "Python\t"; time python pfact.py 200000 > python.out) 2>&1 | tee -a bench.txt
 (echo -n "Pyrex\t"; time python px.py 200000 > cpython.out) 2>&1 | tee -a bench.txt
+(echo -n "Scala\t"; time scala scfact 200000 > scala.out) 2>&1 | tee -a bench.txt
 (echo -n "SML/NJ\t"; time < /dev/null sml mfact.sml > smlnj.out) 2>&1 | tee -a bench.txt

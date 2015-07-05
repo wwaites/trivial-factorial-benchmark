@@ -1,4 +1,4 @@
-TARGETS=cfact gfact hfact ccfact pxfact.so ofact mfact
+TARGETS=cfact gfact hfact ccfact pxfact.so ofact mfact scfact.class
 all: ${TARGETS}
 
 bench: all
@@ -23,9 +23,12 @@ ofact: ofact.ml
 	ocamlopt -ccopt -O3 -o ofact nums.cmxa ofact.ml 
 mfact: mfact.sml
 	mlton mfact.sml
+scfact.class: scfact.scala
+	scalac scfact.scala
 
 clean:
 	rm -f *~
 	rm -f ${TARGETS}
 	rm -f cfact.so hfact.hi hfact.o pxfact.c ofact.o ofact.cmi ofact.cmx
+	rm -f *.class
 	rm -f *.out
