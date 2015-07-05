@@ -8,6 +8,7 @@
     time guile sfact.scm 200000 > guile.out
 ) 2>&1 | tee -a bench.txt
 (echo -n "Haskell\t"; time ./hfact 200000 > haskell.out) 2>&1 | tee -a bench.txt
+(echo -n "Julia\t"; time julia jfact.jl 200000 > julia.out) 2>&1 | tee -a bench.txt
 (echo -n "ML\t"; time ./mfact > mlton.out) 2>&1 | tee -a bench.txt
 (echo -n "Ocaml\t"; time ./ofact 200000 > ocaml.out) 2>&1 | tee -a bench.txt
 (echo -n "Python\t"; time python pfact.py 200000 > python.out) 2>&1 | tee -a bench.txt
