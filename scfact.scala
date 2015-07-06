@@ -9,5 +9,12 @@ object Fact extends App {
     else fact(acc * n, n-1)
   }
 
-  println(fact(1, BigInt(args(0))))
+  def factNonTailRec(n: BigInt): BigInt = {
+    def fact(i: Int, acc: BigInt): BigInt =
+      if (i == n) n*acc
+      else fact(i+1,i*acc)
+    fact(1,1)
+  }
+
+  println(factNonTailRec(BigInt(args(0))))
 }
